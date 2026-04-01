@@ -5,7 +5,7 @@ import vectorImg from '../../assets/vector.png';
 
 const Header = () => {
     return (
-        <div className="mt-13 w-11/12 mx-auto flex items-center justify-between ">
+       <div className="mt-13 w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
             <div className='space-y-5'>
                 
                 <button className='btn bg-white rounded-2xl text-blue-400'><img src={putuliImg} alt="" />New: AI-Powered Tools Available</button>

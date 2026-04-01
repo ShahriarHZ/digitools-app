@@ -4,11 +4,35 @@ const Navbar = ({ cartCount }) => {
   return (
     <div className="navbar bg-base-100 py-4 px-0">
       <div className="navbar-start">
-        <a className="text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent cursor-pointer">
+        <div className="dropdown">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-medium">
+            <li><a>Products</a></li>
+            <li><a>Features</a></li>
+            <li><a>Pricing</a></li>
+            <li><a>FAQ</a></li>
+            <li className='bg-amber-800 rounded-2xl'><a href="#">Login</a></li>
+          </ul>
+        </div>
+        <a className="text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent cursor-pointer ml-2 lg:ml-0">
           DigiTools
         </a>
       </div>
-
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 font-medium opacity-70">
           <li><a className="hover:text-primary">Products</a></li>

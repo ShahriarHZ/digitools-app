@@ -3,7 +3,7 @@ import React from 'react';
 const Navbarnich = () => {
     return (
        
-        <div className='flex justify-around items-center bg-gradient-to-r from-primary to-secondary w-full py-6 px-4  text-white shadow-lg mt-10 space-y-2'>
+       <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 items-center w-full py-6 px-4 bg-linear-to-r from-primary to-secondary text-white shadow-lg">
             
           
             <div className='flex flex-col items-center text-center space-y-2'>
